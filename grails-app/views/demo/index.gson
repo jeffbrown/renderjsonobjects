@@ -1,0 +1,9 @@
+import renderjsonobjects.Address
+import renderjsonobjects.Person
+
+json {
+    Map theModel = (Map)binding.variables.model
+    List data = (List)theModel.theData
+    people tmpl.person(data.findAll { it instanceof Person })
+    addresses tmpl.address(data.findAll { it instanceof Address})
+}

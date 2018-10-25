@@ -1,0 +1,9 @@
+import renderjsonobjects.Address
+
+model {
+    Address address
+}
+
+json {
+    town address.town
+}

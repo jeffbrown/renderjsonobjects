@@ -1,0 +1,9 @@
+import renderjsonobjects.Person
+
+model {
+    Person person
+}
+
+json {
+    name person.name
+}
